@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <div class="logo"><span>DWE</span></div>
+      <div class=" logo"><span>DWE</span></div>
       <ul>
         <li v-for="nav in navList">
           <nuxt-link :to="nav.url">{{ nav.name }}</nuxt-link>
@@ -10,6 +10,22 @@
     </nav>
   </header>
 </template>
+
+<style scoped>
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    color: inherit;
+
+    ul {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+}
+</style>
 
 <script setup lang="ts">
 const navList = ref([

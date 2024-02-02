@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <Header />
+      <!-- <Header /> -->
       <NuxtPage />
     </NuxtLayout>
   </div>
@@ -9,12 +9,13 @@
 
 <script setup>
 import Header from "./components/Header.vue";
+import "./style/style.css";
 
 useSeoMeta({
-  title: 'My Amazing Site',
-  ogTitle: 'My Amazing Site',
-  description: 'This is my amazing site, let me tell you all about it.',
-  ogDescription: 'This is my amazing site, let me tell you all about it.',
+  title: 'Diamond Wealth Enterprise',
+  ogTitle: 'Official website of Diamond Wealth Enterprise',
+  description: 'Official website of Diamond Wealth Enterprise',
+  ogDescription: 'Official website of Diamond Wealth Enterprise',
   ogImage: 'https://example.com/image.png',
   twitterCard: 'summary_large_image',
 })
